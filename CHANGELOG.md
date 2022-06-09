@@ -1,5 +1,16 @@
 # Changelog
 
+## \[0.11.0]
+
+- **Breaking change** `SystemTrayBuilder::new` and `SystemTray::set_icon` now takes `system_tray::Icon` on all platforms.
+  - [0a98eb39](https://github.com/tauri-apps/tao/commit/0a98eb3993d9f24323f71520426712009bd9e272) refactor: system tray icons ([#328](https://github.com/tauri-apps/tao/pull/328)) on 2022-06-06
+- Allow to disable system tray menu only on Left Click.
+  - [0858356f](https://github.com/tauri-apps/tao/commit/0858356f3a14fcb6e1e1dfc8d2d35482388ccb43) feat(macos): allow to disable system tray menu on left click, closes [#317](https://github.com/tauri-apps/tao/pull/317) ([#329](https://github.com/tauri-apps/tao/pull/329)) on 2022-06-09
+- Connect mouse wheel event with GTK window.
+  - [f9e0b734](https://github.com/tauri-apps/tao/commit/f9e0b734c6a3737174d63a0ec8cb2ebc130f35f8) connect mouse wheel event with GTK window ([#412](https://github.com/tauri-apps/tao/pull/412)) on 2022-06-08
+- Support theme on macOS.
+  - [8af4d8f0](https://github.com/tauri-apps/tao/commit/8af4d8f02149f08093cc348e278f5792dab4a423) feat: support theme on macOS ([#408](https://github.com/tauri-apps/tao/pull/408)) on 2022-06-01
+
 ## \[0.10.0]
 
 - Fix movable window background on macOS.
